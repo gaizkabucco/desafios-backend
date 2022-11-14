@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Document</title>
+	</head>
+	<body class="bg-gray-200 flex justify-center">
+		<main class="flex flex-col w-4/5 items-center py-6">
+			<h1 class="text-xl font-bold">Ingrese datos</h1>
+			<form class="flex flex-col pt-4" action="/productos" method="post">
+				<div class="flex flex-col">
+					<label for="title">Titulo</label>
+					<input class="border border-black rounded" id="title" type="text" name="title" />
+				</div>
+
+				<div class="flex flex-col">
+					<label for="price">Precio</label>
+					<input class="border border-black rounded" id="price" type="number" name="price" />
+				</div>
+
+				<div class="flex flex-col">
+					<label for="thumbnail">Imagen</label>
+					<input class="border border-black rounded" id="thumbnail" type="text" name="thumbnail" />
+				</div>
+
+				<button class="mt-4 border border-black bg-green-600 rounded w-4/5 self-center text-white">Enviar</button>
+			</form>
+			<a class="mt-6 border border-black bg-blue-600 rounded text-white px-4" href="/productos">Ver productos</a>
+		</main>
+	</body>
+</html>

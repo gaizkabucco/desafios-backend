@@ -1,0 +1,33 @@
+<h2 class="text-xl font-bold">Historial</h2>
+
+{{#if hayProductos}}
+	<table class="mt-4 rounded">
+		<tr>
+			<th class="border border-black px-4 py-1 text-center">Nombre</th>
+			<th class="border border-black px-4 py-1 text-center">Precio</th>
+			<th class="border border-black px-4 py-1 text-center">Thumbnail</th>
+			<th class="border border-black px-4 py-1 text-center">ID</th>
+		</tr>
+		{{#each productos}}
+			<tr>
+				<td class="border border-black px-4 py-1 text-center">
+					{{this.title}}
+				</td>
+				<td class="border border-black px-4 py-1 text-center">
+					{{this.price}}
+				</td>
+				<td class="border border-black px-4 py-1 text-center">
+					<picture>
+						<img src="{{this.thumbnail}}" alt="" srcset="" />
+					</picture>
+				</td>
+				<td class="border border-black px-4 py-1 text-center">
+					{{this.id}}
+				</td>
+			</tr>
+		{{/each}}
+	</table>
+{{else}}
+	<h3 class="pt-4 text-md">No hay productos</h3>
+{{/if}}
+<a class="mt-6 border border-black bg-blue-600 rounded text-white px-4" href="/">Ingresar Productos</a>
