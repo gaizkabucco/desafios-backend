@@ -1,0 +1,11 @@
+{{#if messages}}
+	<ul>
+		{{#each messages}}
+			<li>
+				<span class="text-primary font-weight-bold">{{this.author}}</span>
+				<span>[<span class="text-danger">{{this.date}}</span>]:</span>
+				<span style="font-style:italic;" class="text-success">{{this.text}}</span>
+			</li>
+		{{/each}}
+	</ul>
+{{/if}}
