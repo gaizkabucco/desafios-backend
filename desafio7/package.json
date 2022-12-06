@@ -1,0 +1,19 @@
+{
+	"type": "module",
+	"name": "desafio7",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "node start",
+		"test": "nodemon start"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"knex": "^2.3.0",
+		"mysql2": "^2.3.3"
+	}
+}
