@@ -1,0 +1,19 @@
+{
+	"type": "module",
+	"name": "preentrega2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/main.js",
+	"scripts": {
+		"test": "nodemon start",
+		"start": "node start"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"firebase-admin": "^11.4.0",
+		"mongodb": "^4.13.0"
+	}
+}
