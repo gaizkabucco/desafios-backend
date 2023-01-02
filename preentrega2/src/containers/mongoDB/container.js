@@ -3,7 +3,7 @@ import { mongoDBClient } from "../../config/mongoClient.js"
 class MongoDBContainer {
 	#collection
 	constructor(collectionName) {
-		this.#collection = mongoDBClient.db().collection(collectionName)
+		this.#collection = mongoDBClient.collection(collectionName)
 	}
 
 	async save(item) {

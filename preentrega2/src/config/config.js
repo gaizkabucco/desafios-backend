@@ -12,8 +12,8 @@ export const CARTS_ROUTE = "./src/storagefiles/carts.txt"
 
 // Seleccion de persistencia---------------------------------------
 
-// export const PERSISTENCE = "mongodb"
-export const PERSISTENCE = "firestore"
+export const PERSISTENCE = "mongodb"
+// export const PERSISTENCE = "firestore"
 // export const PERSISTENCE = "fs"
 // export const PERSISTENCE = "memory"
 
